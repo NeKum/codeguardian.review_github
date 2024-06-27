@@ -19,7 +19,7 @@ runs:
       run: echo "GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH" >> $GITHUB_ENV
 
     - name: Run code review script
-      run: ./run_code_review.sh
+      run: run_code_review.sh
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
