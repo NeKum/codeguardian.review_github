@@ -1,6 +1,6 @@
 #!/bin/bash
 
-URL="http://127.0.0.1/api/v1/review/github"
+URL="http://api.codeguardian.tech:8084/api/v1/review/github"
 
 curl -X POST $URL \
 -H "Content-Type: application/json" \
