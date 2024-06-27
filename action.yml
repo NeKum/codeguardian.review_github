@@ -11,16 +11,15 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+#    - name: Checkout code
+#      uses: actions/checkout@v2
 
 #    - name: Set GitHub event path
 #      shell: bash
 #      run: echo "GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH" >> $GITHUB_ENV
 
     - name: Run code review script
-#      run: run_code_review.sh
-      run: ls
+      run: run_code_review.sh
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
