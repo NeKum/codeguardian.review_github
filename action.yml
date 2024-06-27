@@ -14,9 +14,9 @@ runs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set GitHub event path
-      shell: bash
-      run: echo "GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH" >> $GITHUB_ENV
+#    - name: Set GitHub event path
+#      shell: bash
+#      run: echo "GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH" >> $GITHUB_ENV
 
     - name: Run code review script
       run: run_code_review.sh
