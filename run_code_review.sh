@@ -13,4 +13,4 @@ curl -X PUT $URL \
 -H "Content-Type: application/json" \
 -d "{\"GITHUB_TOKEN\": \"$GITHUB_TOKEN\", \"GITHUB_EVENT_DATA\": $EVENT_DATA_ESCAPED, \"key\": \"$KEY\"}"
 
-sleep 300
+sleep 150
