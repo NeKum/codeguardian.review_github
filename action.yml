@@ -7,7 +7,6 @@ inputs:
   KEY:
     description: "CodeGuardian key"
     required: true
-    default: ""
 runs:
   using: "composite"
   steps:
